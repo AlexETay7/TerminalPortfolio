@@ -31,7 +31,6 @@ Type 'sumfetch' to display summary.
 `;
 };
 
-
 // Redirection
 export const repo = async (args: string[]): Promise<string> => {
   window.open(`${config.repo}`);
