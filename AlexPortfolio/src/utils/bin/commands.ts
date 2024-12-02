@@ -5,22 +5,26 @@ import config from '../../../config.json';
 
 // Help
 export const help = async (args: string[]): Promise<string> => {
-  const commands = Object.keys(bin).sort().join(', ');
-  var c = '';
-  for (let i = 1; i <= Object.keys(bin).sort().length; i++) {
-    if (i % 7 === 0) {
-      c += Object.keys(bin).sort()[i - 1] + '\n';
-    } else {
-      c += Object.keys(bin).sort()[i - 1] + ' ';
+  const commands = Object.keys(bin).sort();
+  const commandsPerRow = 7; // Number of commands per row
+  let formattedCommands = '';
+
+  // Build rows of commands
+  for (let i = 0; i < commands.length; i++) {
+    formattedCommands += commands[i].padEnd(15); // Adjust padding for alignment
+    if ((i + 1) % commandsPerRow === 0 || i === commands.length - 1) {
+      formattedCommands += '\n'; // Add a newline after every row
     }
   }
+
   return `Welcome! Here are all the available commands:
-\n${c}\n
+\n${formattedCommands}
 [tab]: trigger completion.
 [ctrl+l]/clear: clear terminal.\n
 Type 'sumfetch' to display summary.
 `;
 };
+
 
 // Redirection
 export const repo = async (args: string[]): Promise<string> => {
