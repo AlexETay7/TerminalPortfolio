@@ -12,10 +12,6 @@
   "ps1_username": "visitor",
   "repo": "https://github.com/AlexETay7/TerminalPortfolio",
   "resume_url": "https://github.com/AlexETay7/Resume/blob/main/Alex%20E%20Taylor%20Resume.docx%20(7).pdf",
-  "donate_urls": {
-    "paypal": "https://paypal.me/cveinnt",
-    "patreon": "https://patreon.com/cveinnt"
-  },
   "colors": {
     "light": {
       "background": "#FBF1C9",
