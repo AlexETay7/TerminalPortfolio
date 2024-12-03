@@ -1,6 +1,7 @@
 import React from 'react';
 import '../styles/global.css';
 import Head from 'next/head';
+import Snowfall from 'react-snowfall';
 
 const App = ({ Component, pageProps }) => {
   const inputRef = React.useRef<HTMLInputElement>(null);
@@ -25,6 +26,7 @@ const App = ({ Component, pageProps }) => {
         onClick={onClickAnywhere}
       >
         <main className="bg-light-background dark:bg-dark-background w-full h-full p-2">
+          <Snowfall snowflakeCount={50} />
           <Component {...pageProps} inputRef={inputRef} />
         </main>
       </div>
