@@ -1,0 +1,44 @@
+{
+  "readmeUrl": "https://raw.githubusercontent.com/AlexETay7/AlexETay7/master/README.md",
+  "title": "AET",
+  "name": "Alex Taylor",
+  "ascii": "AlexT",
+  "social": {
+    "github": "AlexETay7",
+    "linkedin": "alex-e-taylor"
+  },
+  "email": "alexetaylor7@gmail.com",
+  "ps1_hostname": "alexT",
+  "ps1_username": "visitor",
+  "repo": "https://github.com/AlexETay7/TerminalPortfolio",
+  "resume_url": "https://github.com/AlexETay7/Resume/blob/main/Alex%20E%20Taylor%20Resume.docx%20(7).pdf",
+  "colors": {
+    "light": {
+      "background": "#FBF1C9",
+      "foreground": "#3C3836",
+      "yellow": "#D79921",
+      "green": "#98971A",
+      "gray": "#7C6F64",
+      "blue": "#458588",
+      "red": "#c65460"
+    },
+    "dark": {
+      "background": "#1a1b1f",
+      "foreground": "#E5E9F0",
+      "yellow": "#5E81AC",
+      "green": "#92ba6f",
+      "gray": "#88C0D0",
+      "blue": "#EBCB8B",
+      "red": "#BF616A"
+    },
+    "classic": {
+      "background": "#000000",
+      "foreground": "#00FF00",
+      "yellow": "#00FF00",
+      "green": "#00FF00",
+      "gray": "#008000",
+      "blue": "#00FFFF",
+      "red": "#00FF00"
+    }
+  }
+}
