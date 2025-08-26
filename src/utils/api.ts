@@ -23,15 +23,15 @@ export const getWeather = async (city: string) => {
 };
 
 export const getQuote = async () => {
-  const { data } = await axios.get('http://api.quotable.io/random');
   return {
-    quote: `“${data.content}” — ${data.author}`,
+    quote: `"In times of change, learners inherit the earth, while the learned find themselves beautifully equipped to deal with a world that no longer exists." — Eric Hoffer (1898-1983)`,
   };
 };
 
 export const getCrypto = async (crypto: string) => {
   try {
-    const { data } = await axios.get(`https://api.coincap.io/v2/assets/${crypto}`);
+    const apiKey = process.env.NEXT_PUBLIC_COINCAP_API_KEY;
+    const { data } = await axios.get(`https://rest.coincap.io/v3/assets/${crypto}?apiKey=${apiKey}`);
     return data.data.priceUsd;
   } catch (error) {
     return 'Invalid currency name.'
